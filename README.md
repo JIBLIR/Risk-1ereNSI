@@ -7,19 +7,9 @@ Jeu du risk par Descendre Violette ; Sueur Zélie ; Jefferski Clément ; Irdel J
 
 
 
+## Cahier des charges 
 
-
-Projet NSI : Clément, JB, Zélie et Vio 
-
-Code : https://codeshare.io/ApNYre  
-
-Carte mentale : https://xmind.ai/share/DnASOVpi  
-
-Cahier des charges : https://onedrive.live.com/:w:/g/personal/1E45C0C588981A74/EelxHhmzFQ1OlIqq9a8EsRoBkD7cPwRbkStSSkkThSuR0A?resid=1E45C0C588981A74!s191e71e915b34e0d948aaaf5af04b11a&ithint=file%2Cdocx&e=gKl5HP&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3cvYy8xZTQ1YzBjNTg4OTgxYTc0L0VlbHhIaG16RlExT2xJcXE5YThFc1JvQmtEN2NQd1Jia1N0U1Nra1RoU3VSMEE_ZT1nS2w1SFA   
-
-ID vio : Vio NSI.docx 
-
-À realiser : 
+### À realiser : 
 
 Rendre l affichage plus intuitif en mettant sur le pays son nom le nombre de troupes et des images de troupes 
 
@@ -37,11 +27,11 @@ Réaliser une fonction avec une liste où il y a le nombre de cartes pour chaque
 
 Faire une liste avec tous les boutons pour modifier les couleurs facilement 
 
-Plusieurs fichiers : 
+### Plusieurs fichiers : 
 
 Fichier jeu / Fichier fonctions phases / Fichier images 
 
-Règles 
+### Règles 
 
 Obj : éliminer votre adversaire en capturant tous ses territoires ou en réalisant votre mission. 
 
@@ -69,7 +59,7 @@ Réfléchir si on attaque et défend avec plusieurs régiments
 
 6. Après avoir attaqué, vous pouvez déplacer des régiments stratégiquement pour défendre une zone ou attaquer. Ce n’est pas obligatoire. == fonction déplacement_strat 
 
-Carte du monde, système de tableau 
+### Carte du monde, système de tableau 
 
 ex : on code les joueurs par un nombre joueur 1 : 1 etc... 
 
@@ -93,7 +83,7 @@ Instancie les territoires de façon aléatoire et équilibré avec une liste pou
 
  
 
-Système de continent, Récompense 
+### Système de continent, Récompense 
 
  
 
@@ -105,7 +95,7 @@ On récompense par plus de troupes
 
  
 
-Fonction attaque : 
+### Fonction attaque : 
 
 Entrer le numéro du territoire dont on attaque. 
 
@@ -121,7 +111,7 @@ Menu pour attaquer à nouveau ou changer les régiments de place donner le tour 
 
  
 
-Système de dé  
+### Système de dé  
 
  
 
@@ -149,7 +139,7 @@ On pioche des cartes aléatoires en utilisant la méthode append pour entrer dan
 
  
 
-Système tour par tour 
+### Système tour par tour 
 
  
 
@@ -169,9 +159,9 @@ Bonus
 
  
 
-Démarche de projet :  
+## Démarche de projet :  
 
-Emergence de l’idée  
+### Emergence de l’idée  
 
 Que faut il résoudre  ?  
 
@@ -199,7 +189,7 @@ Outils et démarches : réflexion en groupe sur les centres d’intérêts, so
 
  
 
-Analyse de la situation  
+### Analyse de la situation  
 
 Quel objectif atteindre :  
 
@@ -231,7 +221,7 @@ Utilisation de liste imbriquées pour l’attribution et la numérotation des te
 
  
 
-Choix d’une stratégie 
+### Choix d’une stratégie 
 
 Quel plan d’action adopter ? :  
 
@@ -253,7 +243,7 @@ Quel contrat établir avec les élèves ?
 
 Outils et démarches : cahier des charges, contrat, fiche d’appréciation collective du projet  
 
-Montage et planification du projet 
+### Montage et planification du projet 
 
 Quelles sont les étapes (activités, productions attendues) ? 
 
@@ -299,7 +289,7 @@ Entraide des élèves si la demande est formulée
 
  
 
-Mise en œuvre du projet 
+### Mise en œuvre du projet 
 
 Comment suivre le projet ? 
 
@@ -319,7 +309,7 @@ Quelle aide individualisée apporter en terminale BEP ?
 
  
 
-Bilan 
+### Bilan 
 
 Comment évaluer le projet ? 
 
@@ -385,11 +375,11 @@ Comment rendre compte du projet : déroulement, résultats… ?
 
  
 
-Description algorithmique du code : 
+## Description algorithmique du code : 
 
 Le jeu du risk est divisé en 4 phases, la phase de l’instanciation de la carte, le déploiement, l’attaque et le renforcement, notre but est d’établir 4 fonctions. 
 
-  - Carte risk 
+  ### - Carte risk 
 
 But : attribuer aléatoirement les territoires aux joueurs ainsi que leurs troupes en fonction du nombre de territoires et de nombre de troupe par joueur. Le but est que cette répartition se fasse de la façon équitable possible 
 
@@ -409,7 +399,7 @@ Nous utilisons une boucle tant que qui vérifie que tant qu’un élément de la
 
 Enfin on renvoi la liste “map”. 
 
-Déploiement 
+### - Déploiement 
 
 But : distribuer le nombre de troupes en fonctions du nombre de territoire et des continents occupés  
 
@@ -435,7 +425,7 @@ On accorde un nombre de troupe général de 3, si le joueur à plus de 13 troupe
 
 A la fin on retourne la variable troupes.   
 
-Attaque 
+### - Attaque 
 
 But : prend en entrée les territoires en combat et retourne les résultats 
 
@@ -483,7 +473,7 @@ On change les résultats dans la liste map et on la retourne avec les résultats
 
  
 
-Retranchement 
+### - Retranchement 
 
 But : déplace une troupe d'un point a à b 
 
@@ -511,7 +501,7 @@ Enfin, on retourne la liste ”map”
 
  
 
-Fonction attaque : 
+### - Fonction attaque : 
 
 Entrer le numéro du territoire dont on attaque. 
 
